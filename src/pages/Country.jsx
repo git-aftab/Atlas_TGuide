@@ -2,7 +2,7 @@ import React from 'react'
 
 const Country = () => {
   return (
-    <div>Country Page</div>
+    <div className='h-[100vh]'>Country Page</div>
   )
 }
 

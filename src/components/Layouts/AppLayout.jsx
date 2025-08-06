@@ -5,11 +5,11 @@ import { Outlet } from "react-router-dom";
 
 const AppLayout = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };
 
