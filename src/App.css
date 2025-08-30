@@ -2,3 +2,26 @@ body{
     background-color: black;
     color: white;
 }
+
+.gradient-border{
+    background:radial-gradient(circle at 100% 100%, #000000 0, #000000 6px, transparent 6px) 0% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 0 100%, #000000 0, #000000 6px, transparent 6px) 100% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 100% 0, #000000 0, #000000 6px, transparent 6px) 0% 100%/8px 8px no-repeat,
+            radial-gradient(circle at 0 0, #000000 0, #000000 6px, transparent 6px) 100% 100%/8px 8px no-repeat,
+            linear-gradient(#000000, #000000) 50% 50%/calc(100% - 2px) calc(100% - 4px) no-repeat,
+            linear-gradient(#000000, #000000) 50% 50%/calc(100% - 4px) calc(100% - 2px) no-repeat,
+            linear-gradient(339deg, transparent 0%, #5dcc7a 100%);
+}
+
+.red-border-gradient{
+    background: radial-gradient(circle at 100% 100%, #000000 0, #000000 7px, transparent 7px) 0% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 0 100%, #000000 0, #000000 7px, transparent 7px) 100% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 100% 0, #000000 0, #000000 7px, transparent 7px) 0% 100%/8px 8px no-repeat,
+            radial-gradient(circle at 0 0, #000000 0, #000000 7px, transparent 7px) 100% 100%/8px 8px no-repeat,
+            linear-gradient(#000000, #000000) 50% 50%/calc(100% - 2px) calc(100% - 16px) no-repeat,
+            linear-gradient(#000000, #000000) 50% 50%/calc(100% - 16px) calc(100% - 2px) no-repeat,
+            linear-gradient(42deg, transparent 0%, #5dcc7a 100%);
+border-radius: 8px;
+padding: 19px;
+box-sizing: border-box;
+}

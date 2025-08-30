@@ -2,16 +2,16 @@
   {
     "icon": "MdPlace",
     "title": "Find us",
-    "details": "Pune, Maharashtra"
+    "details": "Chennai, India"
   },
   {
     "icon": "IoCallSharp",
     "title": "Call us",
-    "details": "9876543211"
+    "details": "98765432112"
   },
   {
     "icon": "TbMailPlus",
     "title": "Mail us",
-    "details": "contact@kodyfier.com"
+    "details": "aftabdev18@gmail.com"
   }
 ]

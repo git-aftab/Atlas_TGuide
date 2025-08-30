@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Country from "./pages/Country";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
+import CardDetails from "./components/Layouts/CardDetails";
 
 const routes = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const routes = createBrowserRouter([
       {
         path: "country",
         element: <Country />,
+      },
+      {
+        path: "country/:id",
+        element: <CardDetails />,
       },
       {
         path: "contact",

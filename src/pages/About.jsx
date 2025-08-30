@@ -8,14 +8,14 @@ const About = () => {
         Explore! The Top Most Popular Country
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3  ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 ">
         {countryFacts.map((countryDatas) => {
         const { id, name, capital, population, currency, interestingFact } =
           countryDatas;
         return (
           <div
             key={id}
-            className="my-5 bg-gray-900 px-2 py-2 rounded-md border border-[#929292] cursor-pointer"
+            className="my-5 bg-gray-900 px-2 py-2 rounded-mdcursor-pointer red-border-gradient"
           >
             <div className=" md:col-span-1 md:ml-2">
               <p className="text-2xl font-semibold">{name}</p>
