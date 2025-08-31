@@ -10,17 +10,17 @@ const Header = () => {
         </NavLink>
         <nav>
           <div className="flex gap-2 md:gap-5 lg:gap-8">
-            <p className="cursor-pointer md:text-xl lg:text-2xl font-semibold hover:text-gray-500">
+            <p className="cursor-pointer md:text-xl lg:text-2xl font-semibold hover:text-gray-500 hover:border-b-[3px] hover:border-b-blue-600">
               <NavLink to="/">Home</NavLink>
             </p>
-            <p className="cursor-pointer md:text-xl lg:text-2xl font-semibold hover:text-gray-500">
+            <p className="cursor-pointer md:text-xl lg:text-2xl font-semibold hover:text-gray-500 hover:border-b-[3px] hover:border-b-blue-600">
               <NavLink to="/country">Country</NavLink>
             </p>
-            <p className="cursor-pointer md:text-xl lg:text-2xl font-semibold hover:text-gray-500">
+            <p className="cursor-pointer md:text-xl lg:text-2xl font-semibold hover:text-gray-500 hover:border-b-[3px] hover:border-b-blue-600">
               <NavLink to="/contact">Contact</NavLink>
             </p>
-            <p className="cursor-pointer md:text-xl lg:text-2xl font-semibold hover:text-gray-500">
-              <NavLink to="/about">About Us</NavLink>
+            <p className="cursor-pointer md:text-xl lg:text-2xl font-semibold hover:text-gray-500 hover:border-b-[3px] hover:border-b-blue-600">
+              <NavLink to="/about">About</NavLink>
             </p>
           </div>
         </nav>

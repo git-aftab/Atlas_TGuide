@@ -8,7 +8,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-[100vh]">
+    <div className="flex flex-col justify-center items-center h-[80vh]">
       <h2 className="text-4xl text-center mb-5">Contact Us</h2>
 
       <form action={formSubmitHandler} className="flex flex-col w-120 gap-5">

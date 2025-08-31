@@ -1,11 +1,14 @@
 import React, { useTransition, useState, useEffect } from "react";
-import {PostApi} from "../Api/PostApi";
+import { PostApi } from "../Api/PostApi";
 import Loader from "../components/UI/Loader";
 import CountryCard from "../components/UI/CountryCard";
+import SearchFilter from "../components/UI/SearchFilter";
 
 const Country = () => {
   const [ispending, startTransition] = useTransition();
   const [Countries, setCountries] = useState([]);
+  const [search, setsearch] = useState();
+  const [filter, setFilter] = useState("all");
 
   useEffect(() => {
     startTransition(async () => {
@@ -22,10 +25,32 @@ const Country = () => {
         <Loader />
       </h1>
     );
+
+  const searchCountry = (country) => {
+    if (search) {
+      return country.name.common.toLowerCase().includes(search.toLowerCase());
+    }
+    return country
+  };
+
+  // filter
+  const filterRegion=(country)=>{
+    if(filter==="all") return country
+    return country.region === filter
+  }
+
+  // Search logic
+  const filterCountries = Countries.filter((country) => searchCountry(country) && filterRegion(country));
   return (
-    <section>
+    <section className="min-h-[80vh]">
+      <SearchFilter
+        search={search}
+        setSearch={setsearch}
+        filter={filter}
+        setFilter={setFilter}
+      />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-        {Countries.map((countriesList, index) => {
+        {filterCountries.map((countriesList, index) => {
           return <CountryCard key={index} Country={countriesList} />;
         })}
       </div>
